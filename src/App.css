@@ -1,0 +1,95 @@
+#root {
+  max-width: 1200px;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Noto Sans', sans-serif;
+  background-color:cornsilk;
+}
+.navbar{
+  padding: 15px;
+  color: white;
+  background-color: purple;
+  text-align: center;
+}
+.main-logo{
+  font-size: 18px;
+}
+
+.memeContent{
+  margin: 40px;
+
+}
+input{
+  text-align: center;
+  font-size: 17px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 4px solid purple;
+  text-transform: uppercase;
+}
+
+.form{
+  display: grid;
+  grid-template: 40px 40px / 50% 50%;
+  gap: 20px
+}
+.formButton{
+  grid-column: 1 / -1;
+  font-size: 15px;
+  background-color: purple;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.MEMEIMG{
+  margin-top: 20px;
+  background-size: contain;
+  width: auto;
+  height: 300px; 
+}
+.memeSec{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+.topImg{
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  margin-top: -280px;
+  color: white;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+} 
+.bottomImg{
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 180px;
+  color: white;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-ser
+}
+@media all and (max-width: 500px) {
+  .memeContent{
+    margin:50px 5px;
+  }
+  .memeSec{
+    width: 100%;
+  }
+}
